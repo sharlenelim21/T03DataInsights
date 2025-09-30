@@ -2,60 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Televisions Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisions | Power Appliances</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-     <div class="topnav" id="myTopnav">
-    <a href="javascript:void(0);" class="logo" data-nav="index.html">
-    <img src="image/PowerIcon.png" alt="Power Appliances Logo">
-    </a>
-    <a href="javascript:void(0);" data-nav="index.html">Home</a>
-    <a href="javascript:void(0);" data-nav="televisions.html">Televisions</a>
-    <a href="javascript:void(0);" data-nav="aboutus.html">About Us</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-    </a>
-    </div>
-  </header>
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="logo" data-nav="index.html">
+                <img src="image/PowerIcon.png" alt="Power Appliances Logo">
+            </a>
+            <a href="javascript:void(0);" data-nav="index.html">Home</a>
+            <a href="javascript:void(0);" data-nav="televisions.html" class="active">Televisions</a>
+            <a href="javascript:void(0);" data-nav="aboutus.html">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
     <main>
-        <h1>Televisions</h1>
-        <p>Televisions in Australia also show significant differences in energy consumption based on size and display type.  
-        </p>
-        <table class="energy-table">
-            <thead>
-                <tr>
-                <th>Television Model</th>
-                <th>Energy Consumption (kWh/year)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td>32-inch LED TV</td>
-                <td>55</td>
-                </tr>
-                <tr>
-                <td>55-inch LED TV</td>
-                <td>115</td>
-                </tr>
-                <tr>
-                <td>65-inch OLED TV</td>
-                <td>195</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>
-        Choosing a higher star-rated television can help Australian households lower electricity bills while reducing carbon emissions.
-        </p>
+        <h1>Television Energy Tips</h1>
+
+        <div class="content-box">
+            <h2>Size & technology matter:</h2>
+            <p><strong>Larger screens and older tech (e.g. plasma) use more energy.</strong> Modern LED/LCD and OLED sets are generally more efficient.</p>
+            
+            <ul>
+                <li>Use the TV's <em>Energy Saver</em> or <em>Eco</em> mode and reduce brightness where comfortable.</li>
+                <li>Disable "always-listening" voice features if you don't use them; they can add standby draw.</li>
+                <li>Consider star rating and annual kWh on the energy label when purchasing.</li>
+            </ul>
+
+            <div class="placeholder-note">
+                <strong>Placeholder note:</strong> Insert simple examples of annual kWh for common TV sizes in Australia to make this page concrete.
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2 class="section-heading">TV Energy Insights: Data Story</h2>
+            <p>This section presents findings from the Australian Government's Television Energy Rating dataset. The aim is to help Australian consumers make informed decisions about technology, size, brand, and efficiency.</p>
+
+            <h3 class="chart-title">Chart 1: What TV technologies are most common?</h3>
+            <p class="chart-subtitle">Pie Chart</p>
+            <canvas id="techChart" width="400" height="400"></canvas>
+        </div>
     </main>
+
     <footer>
         <div class="footer-container">
             <p>&copy; <span id="year"></span> Sharlene Lim Khai Xing. Assisted by ChatGPT.</p>
         </div>
-</footer>
-
+    </footer>
 </body>
 </html>
